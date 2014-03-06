@@ -33,10 +33,11 @@ max = 0
     up = data[y][x] * data[y-1][x] * data[y-2][x] * data[y-3][x]
     up > max ? max = up : false
   end
-  if y <= 16
-    down = data[y][x] * data[y+1][x] * data[y+2][x] * data[y+3][x]
-    down > max ? max = down : false
-  end
+  #down should be the same as up
+  #if y <= 16
+  #  down = data[y][x] * data[y+1][x] * data[y+2][x] * data[y+3][x]
+  #  down > max ? max = down : false
+  #end
   end
 end
 

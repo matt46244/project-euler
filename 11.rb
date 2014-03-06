@@ -16,8 +16,9 @@ max = 0
     end
   end
   if x >= 3
-    left = data[y][x] * data[y][x-1] * data[y][x-2] * data[y][x-3]
-    left > max ? max = left : false
+    #left should be the same as right
+    #left = data[y][x] * data[y][x-1] * data[y][x-2] * data[y][x-3]
+    #left > max ? max = left : false
     if y <= 16
       left_down = data[y][x] * data[y+1][x-1] * data[y+2][x-2] * data[y+3][x-3]
       left_down > max ? max = left_down : false
